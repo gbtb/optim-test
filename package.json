@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "reactor": "elm reactor",
+    "build-all": "npm run build-debug; npm run build; npm run build-optim;",
     "build-debug": "elm make src/Main.elm --debug --output src/index-debug.js",
     "build": "elm make src/Main.elm --output src/index.js",
     "build-optim": "elm make src/Main.elm --optimize --output src/index-optim.js"
   },
   "devDependencies": {
-    "dotenv": "^5.0.0",
     "elm": "0.19.0-bugfix2",
     "elm-hot-webpack-loader": "^1.0.0",
     "elm-test": "^0.19.0-beta8",
-    "elm-webpack-loader": "^5.0.0",
+    "elm-webpack-loader": "^5.0.0"
   }
 }

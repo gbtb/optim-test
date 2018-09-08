@@ -4816,7 +4816,7 @@ var author$project$Main$view = function (model) {
 				elm$html$Html$img,
 				_List_fromArray(
 					[
-						elm$html$Html$Attributes$src('/logo.svg')
+						elm$html$Html$Attributes$src('/public/logo.svg')
 					]),
 				_List_Nil),
 				A2(
